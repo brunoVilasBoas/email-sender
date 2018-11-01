@@ -73,8 +73,8 @@ public class EmailConfig {
 
 	private void configContent(String toEmail, String subject, String body, MimeMessage message) throws MessagingException, UnsupportedEncodingException {
 		try {
-			message.setFrom(new InternetAddress("brunoJava@gmail.com", "Bruno Vilas Boas"));
-			message.setReplyTo(InternetAddress.parse("brunoJava@gmail.com", false));
+			message.setFrom(new InternetAddress("brunoordoni@gmail.com", "Bruno Vilas Boas"));
+			message.setReplyTo(InternetAddress.parse("brunoordoni@gmail.com", false));
 			message.setSubject(subject, "UTF-8");
 			message.setText(body, "UTF-8");
 			message.setSentDate(new Date());
